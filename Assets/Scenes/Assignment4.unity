@@ -544,7 +544,10 @@ MonoBehaviour:
     mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089]]"},"energy":{"_value":100.0,"_name":"energy","_id":"8cc21709-32e1-4b1a-8266-89edfa10f4d8","$type":"NodeCanvas.Framework.Variable`1[[System.Single,
     mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089]]"},"cleanliness":{"_value":100.0,"_name":"cleanliness","_id":"6dadd58f-30a0-4684-8afb-02d8047b4bc5","$type":"NodeCanvas.Framework.Variable`1[[System.Single,
     mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089]]"},"foodTransform":{"_value":1,"_name":"foodTransform","_id":"3b78749a-6c50-4e26-8356-b7bf58d912ff","$type":"NodeCanvas.Framework.Variable`1[[UnityEngine.Transform,
-    UnityEngine.CoreModule, Version=0.0.0.0, Culture=neutral, PublicKeyToken=null]]"}}}'
+    UnityEngine.CoreModule, Version=0.0.0.0, Culture=neutral, PublicKeyToken=null]]"},"actionIndex":{"_name":"actionIndex","_id":"a81ca18d-3f0d-4599-97f6-2d5b0f53ea3b","$type":"NodeCanvas.Framework.Variable`1[[System.Int32,
+    mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089]]"},"checkTime":{"_value":4.0,"_name":"checkTime","_id":"718da29b-7c9d-403c-b042-b14fc0f37a13","$type":"NodeCanvas.Framework.Variable`1[[System.Single,
+    mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089]]"},"speed":{"_value":2.0,"_name":"speed","_id":"34881405-0bb2-4fe5-acc7-39153453cb46","$type":"NodeCanvas.Framework.Variable`1[[System.Single,
+    mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089]]"}}}'
   _objectReferences:
   - {fileID: 0}
   - {fileID: 378823751}
@@ -566,6 +569,15 @@ MonoBehaviour:
     _references:
     - {fileID: 0}
     - {fileID: 378823751}
+  - _json: '{"_name":"actionIndex","_id":"a81ca18d-3f0d-4599-97f6-2d5b0f53ea3b","$type":"NodeCanvas.Framework.Variable`1[[System.Int32,
+      mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089]]"}'
+    _references: []
+  - _json: '{"_value":4.0,"_name":"checkTime","_id":"718da29b-7c9d-403c-b042-b14fc0f37a13","$type":"NodeCanvas.Framework.Variable`1[[System.Single,
+      mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089]]"}'
+    _references: []
+  - _json: '{"_value":2.0,"_name":"speed","_id":"34881405-0bb2-4fe5-acc7-39153453cb46","$type":"NodeCanvas.Framework.Variable`1[[System.Single,
+      mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089]]"}'
+    _references: []
 --- !u!114 &679609435
 MonoBehaviour:
   m_ObjectHideFlags: 0

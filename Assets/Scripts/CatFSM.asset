@@ -12,7 +12,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: f945e777233a59f4aba40aeca29093a6, type: 3}
   m_Name: CatFSM
   m_EditorClassIdentifier: 
-  _serializedGraph: '{"type":"NodeCanvas.StateMachines.FSM","nodes":[{"_actionList":{"executionMode":1,"actions":[{"satietyBBP":{"_name":"satiety","_targetVariableID":"8ec6e402-b286-495e-aafd-93d91cfb2458"},"thirstyBBP":{"_name":"thirsty","_targetVariableID":"e73bd6af-270c-4fb2-bf78-26b1608f1f27"},"energyBBP":{"_name":"energy","_targetVariableID":"8cc21709-32e1-4b1a-8266-89edfa10f4d8"},"cleanlinessBBP":{"_name":"cleanliness","_targetVariableID":"6dadd58f-30a0-4684-8afb-02d8047b4bc5"},"satietySpeedBBP":{"_value":4.0},"thirstySpeedBBP":{"_value":2.0},"energySpeedBBP":{"_value":1.0},"cleanlinessSpeedBBP":{"_value":4.0},"$type":"NodeCanvas.Tasks.Actions.NeedsUpdate"}]},"_color":{"r":1.0,"g":0.42,"b":0.32,"a":1.0},"_name":"Idle","_position":{"x":278.0,"y":220.0},"$type":"NodeCanvas.StateMachines.ActionState"},{"_nestedFSM":{"_value":1},"_position":{"x":483.9434,"y":216.8635},"$type":"NodeCanvas.StateMachines.NestedFSMState"}],"connections":[],"canvasGroups":[],"localBlackboard":{"_variables":{}}}'
+  _serializedGraph: '{"type":"NodeCanvas.StateMachines.FSM","nodes":[{"_actionList":{"executionMode":1,"actions":[{"satietyBBP":{"_name":"satiety","_targetVariableID":"8ec6e402-b286-495e-aafd-93d91cfb2458"},"thirstyBBP":{"_name":"thirsty","_targetVariableID":"e73bd6af-270c-4fb2-bf78-26b1608f1f27"},"energyBBP":{"_name":"energy","_targetVariableID":"8cc21709-32e1-4b1a-8266-89edfa10f4d8"},"cleanlinessBBP":{"_name":"cleanliness","_targetVariableID":"6dadd58f-30a0-4684-8afb-02d8047b4bc5"},"satietySpeedBBP":{},"thirstySpeedBBP":{"_value":2.0},"energySpeedBBP":{"_value":1.0},"cleanlinessSpeedBBP":{"_value":4.0},"$type":"NodeCanvas.Tasks.Actions.NeedsUpdate"}]},"_color":{"r":1.0,"g":0.42,"b":0.32,"a":1.0},"_name":"Idle","_position":{"x":278.0,"y":220.0},"$type":"NodeCanvas.StateMachines.ActionState","$id":"0"},{"_nestedFSM":{"_value":1},"_position":{"x":465.279,"y":319.9626},"$type":"NodeCanvas.StateMachines.NestedFSMState","$id":"1"},{"_actionList":{"executionMode":1,"actions":[{"foodTransform":{"_name":"foodTransform","_targetVariableID":"3b78749a-6c50-4e26-8356-b7bf58d912ff"},"speedBBP":{"_name":"speed","_targetVariableID":"34881405-0bb2-4fe5-acc7-39153453cb46"},"$type":"NodeCanvas.Tasks.Actions.EatAction"}]},"_color":{"r":1.0,"g":0.42,"b":0.32,"a":1.0},"_name":"Eat","_position":{"x":695.0298,"y":481.7214},"$type":"NodeCanvas.StateMachines.ActionState","$id":"2"}],"connections":[{"_condition":{"checkTime":{"_name":"checkTime","_targetVariableID":"718da29b-7c9d-403c-b042-b14fc0f37a13"},"$type":"NodeCanvas.Tasks.Conditions.NeedsCheckTimeCondition"},"_sourceNode":{"$ref":"0"},"_targetNode":{"$ref":"1"},"$type":"NodeCanvas.StateMachines.FSMConnection"},{"_sourceNode":{"$ref":"1"},"_targetNode":{"$ref":"2"},"$type":"NodeCanvas.StateMachines.FSMConnection"}],"canvasGroups":[],"localBlackboard":{"_variables":{}}}'
   _objectReferences:
   - {fileID: 0}
   - {fileID: 11400000, guid: 9db70c6fba429544880acfe34232d53e, type: 2}
@@ -20,7 +20,7 @@ MonoBehaviour:
     _version: 3.3
     _category: 
     _comments: 
-    _translation: {x: 123, y: 163}
+    _translation: {x: 84, y: 127}
     _zoomFactor: 0.7500877
   _haltSerialization: 0
   _externalSerializationFile: {fileID: 0}
