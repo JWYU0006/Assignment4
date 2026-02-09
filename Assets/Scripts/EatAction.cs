@@ -8,16 +8,12 @@ namespace NodeCanvas.Tasks.Actions
 
     public class EatAction : ActionTask
     {
-        public BBParameter<Transform> foodTransform;
-        public BBParameter<float> speedBBP;
+        public BBParameter<float> satietyBBP;
 
         protected override void OnUpdate()
         {
-            agent.transform.position = Vector3.MoveTowards(agent.transform.position, foodTransform.value.position, Time.deltaTime * speedBBP.value);
-            if (Vector3.Distance(agent.transform.position, foodTransform.value.position) < 1f)
-            {
-                EndAction(true);
-            }
+            if (satietyBBP.value >= 80f) EndAction(true);
+            else satietyBBP.value += Time.deltaTime * 20f;
         }
     }
 }

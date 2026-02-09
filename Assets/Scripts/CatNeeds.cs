@@ -9,9 +9,9 @@ public class CatNeeds : MonoBehaviour
 
     private void Update()
     {
-        if (energy <= 50)
-        {
-            body.rotation = Quaternion.Euler(90, 0, 0);
-        }
+        //if (energy <= 50)
+        //{
+        //    body.rotation = Quaternion.Euler(90, 0, 0);
+        //}
     }
 }
