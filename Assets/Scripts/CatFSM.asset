@@ -12,13 +12,15 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: f945e777233a59f4aba40aeca29093a6, type: 3}
   m_Name: CatFSM
   m_EditorClassIdentifier: 
-  _serializedGraph: '{"type":"NodeCanvas.StateMachines.FSM","nodes":[{"_actionList":{"executionMode":1,"actions":[]},"_color":{"r":1.0,"g":0.42,"b":0.32,"a":1.0},"_name":"Idle","_position":{"x":278.0,"y":220.6667},"$type":"NodeCanvas.StateMachines.ActionState"},{"_conditionList":{"conditions":[]},"_actionList":{"executionMode":1,"actions":[{"$type":"NodeCanvas.Tasks.Actions.NeedsUpdate"}]},"_position":{"x":265.3333,"y":345.0},"$type":"NodeCanvas.StateMachines.OnFSMUpdate"}],"connections":[],"canvasGroups":[],"localBlackboard":{"_variables":{}}}'
-  _objectReferences: []
+  _serializedGraph: '{"type":"NodeCanvas.StateMachines.FSM","nodes":[{"_actionList":{"executionMode":1,"actions":[{"satietyBBP":{"_name":"satiety","_targetVariableID":"8ec6e402-b286-495e-aafd-93d91cfb2458"},"thirstyBBP":{"_name":"thirsty","_targetVariableID":"e73bd6af-270c-4fb2-bf78-26b1608f1f27"},"energyBBP":{"_name":"energy","_targetVariableID":"8cc21709-32e1-4b1a-8266-89edfa10f4d8"},"cleanlinessBBP":{"_name":"cleanliness","_targetVariableID":"6dadd58f-30a0-4684-8afb-02d8047b4bc5"},"satietySpeedBBP":{"_value":4.0},"thirstySpeedBBP":{"_value":2.0},"energySpeedBBP":{"_value":1.0},"cleanlinessSpeedBBP":{"_value":4.0},"$type":"NodeCanvas.Tasks.Actions.NeedsUpdate"}]},"_color":{"r":1.0,"g":0.42,"b":0.32,"a":1.0},"_name":"Idle","_position":{"x":278.0,"y":220.0},"$type":"NodeCanvas.StateMachines.ActionState"},{"_nestedFSM":{"_value":1},"_position":{"x":483.9434,"y":216.8635},"$type":"NodeCanvas.StateMachines.NestedFSMState"}],"connections":[],"canvasGroups":[],"localBlackboard":{"_variables":{}}}'
+  _objectReferences:
+  - {fileID: 0}
+  - {fileID: 11400000, guid: 9db70c6fba429544880acfe34232d53e, type: 2}
   _graphSource:
     _version: 3.3
     _category: 
     _comments: 
-    _translation: {x: 70, y: 49}
-    _zoomFactor: 1
+    _translation: {x: 123, y: 163}
+    _zoomFactor: 0.7500877
   _haltSerialization: 0
   _externalSerializationFile: {fileID: 0}
