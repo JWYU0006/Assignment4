@@ -1,5 +1,6 @@
 using NodeCanvas.Framework;
 using UnityEngine;
+using UnityEngine.AI;
 
 namespace NodeCanvas.Tasks.Actions
 {
@@ -17,6 +18,8 @@ namespace NodeCanvas.Tasks.Actions
         protected override void OnUpdate()
         {
             NeedsUpdateFunction();
+            Wander();
+            if (navMeshAgent == null) Debug.Log($"{agent.name} - NavigationTask: Unable to get NavMesh Agent Reference!");
         }
 
         public void NeedsUpdateFunction()
@@ -48,6 +51,56 @@ namespace NodeCanvas.Tasks.Actions
                 need -= cleanlinessSpeedBBP.value * Time.deltaTime;
 
             return Mathf.Clamp(need, 0f, 100f);
+        }
+
+        private float timeSinceLastSample = 0f;
+        private Vector3 lastTargetPosition = Vector3.zero;
+        private Vector3 targetPosition = Vector3.zero;
+        private bool isMoving = false;
+
+        private float wanderDistance = 4f;
+        private float wanderRadius = 3f;
+
+        public BBParameter<NavMeshAgent> navMeshAgent;
+
+        private void Wander()
+        {
+            timeSinceLastSample += Time.deltaTime;
+            if (timeSinceLastSample > 3)
+            {
+                timeSinceLastSample = 0;
+
+                if (lastTargetPosition != targetPosition)
+                {
+                    lastTargetPosition = targetPosition;
+                    if (NavMesh.SamplePosition(targetPosition, out NavMeshHit hitinfo, 3, NavMesh.AllAreas))
+                    {
+                        navMeshAgent.value.SetDestination(hitinfo.position);
+                    }
+                }
+
+                isMoving =
+                    navMeshAgent.value.remainingDistance != 0 &&
+                    navMeshAgent.value.remainingDistance != Mathf.Infinity ||
+                    navMeshAgent.value.pathPending;
+            }
+            if (timeSinceLastSample == 0 && isMoving == false)
+            {
+                Vector3 destination = CalculateTargetPosition();
+                if (NavMesh.SamplePosition(destination, out NavMeshHit hitInfo, wanderDistance + wanderRadius, NavMesh.AllAreas))
+                {
+                    targetPosition = hitInfo.position;
+                }
+            }
+        }
+        private Vector3 CalculateTargetPosition()
+        {
+            Vector3 circleCenter = agent.transform.position + agent.transform.forward * wanderDistance;
+            Vector3 randomPoint = Random.insideUnitSphere.normalized * wanderRadius;
+
+            Vector3 destination = circleCenter + randomPoint;
+
+            return destination;
         }
     }
 }

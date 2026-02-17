@@ -12,13 +12,13 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: f945e777233a59f4aba40aeca29093a6, type: 3}
   m_Name: NeedsCheckFSM
   m_EditorClassIdentifier: 
-  _serializedGraph: '{"type":"NodeCanvas.StateMachines.FSM","nodes":[{"_actionList":{"executionMode":1,"actions":[{"$type":"NodeCanvas.Tasks.Actions.AssignActionIndex"}]},"_color":{"r":1.0,"g":0.42,"b":0.32,"a":1.0},"_position":{"x":346.6667,"y":273.3333},"$type":"NodeCanvas.StateMachines.ActionState"}],"connections":[],"canvasGroups":[],"localBlackboard":{"_variables":{}}}'
+  _serializedGraph: '{"type":"NodeCanvas.StateMachines.FSM","nodes":[{"_actionList":{"executionMode":1,"actions":[{"satietyBBP":{"_name":"satiety","_targetVariableID":"8ec6e402-b286-495e-aafd-93d91cfb2458"},"thirstyBBP":{"_name":"thirsty","_targetVariableID":"e73bd6af-270c-4fb2-bf78-26b1608f1f27"},"energyBBP":{"_name":"energy","_targetVariableID":"8cc21709-32e1-4b1a-8266-89edfa10f4d8"},"cleanlinessBBP":{"_name":"cleanliness","_targetVariableID":"6dadd58f-30a0-4684-8afb-02d8047b4bc5"},"actionIndexBBP":{"_name":"actionIndex","_targetVariableID":"a81ca18d-3f0d-4599-97f6-2d5b0f53ea3b"},"$type":"NodeCanvas.Tasks.Actions.AssignActionIndex"}]},"_color":{"r":1.0,"g":0.42,"b":0.32,"a":1.0},"_position":{"x":347.3333,"y":273.3333},"$type":"NodeCanvas.StateMachines.ActionState"}],"connections":[],"canvasGroups":[],"localBlackboard":{"_variables":{}}}'
   _objectReferences: []
   _graphSource:
-    _version: 3.3
+    _version: 3.33
     _category: 
     _comments: 
-    _translation: {x: 0, y: 0}
+    _translation: {x: -23, y: 116}
     _zoomFactor: 1
   _haltSerialization: 0
   _externalSerializationFile: {fileID: 0}

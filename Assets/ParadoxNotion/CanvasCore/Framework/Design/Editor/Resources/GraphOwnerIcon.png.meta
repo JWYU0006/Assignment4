@@ -45,3 +45,10 @@ TextureImporter:
     sprites: []
   spritePackingTag: 
   userData: 
+AssetOrigin:
+  serializedVersion: 1
+  productId: 14914
+  packageName: NodeCanvas
+  packageVersion: 3.3.3
+  assetPath: Assets/ParadoxNotion/CanvasCore/Framework/Design/Editor/Resources/GraphOwnerIcon.png
+  uploadId: 754282

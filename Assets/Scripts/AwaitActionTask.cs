@@ -12,8 +12,8 @@ namespace NodeCanvas.Tasks.Actions
         public float minWaitTime;
         public BBParameter<Vector3> startingPosition;
 
-        private float totalTimeToWait;
-        private float timeWaiting = 0f;
+        //private float totalTimeToWait;
+        //private float timeWaiting = 0f;
 
         //Use for initialization. This is called only once in the lifetime of the task.
         //Return null if init was successfull. Return an error string otherwise
